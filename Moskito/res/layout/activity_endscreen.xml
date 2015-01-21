@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EndScreen" >
+
+    <TextView
+        android:id="@+id/pointsDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/endView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pointsDisplay"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="54dp" />
+    
+    <Button
+        android:id="@+id/highscoreButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/endView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/retry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/highscoreButton"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/highscoreTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/retry"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="14dp"
+        android:text="Highscores" />
+
+    <TextView
+        android:id="@+id/highscore1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/highscoreTitle"
+        android:layout_centerHorizontal="true"
+        android:text="Highscore 1"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/highscore2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/highscore1"
+        android:layout_centerHorizontal="true"
+        android:text="Highscore 2"
+        android:visibility="invisible" />
+
+    <TextView
+        android:id="@+id/highscore3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/highscore2"
+        android:layout_centerHorizontal="true"
+        android:text="Highscore 3"
+        android:visibility="invisible" />
+
+</RelativeLayout>
