@@ -143,7 +143,6 @@ public class EndScreen extends Activity implements OnClickListener {
 	private class MyAsyncTask extends AsyncTask<String, Integer, Double> {
 		@Override
 		protected Double doInBackground(String... params) {
-			// TODO Auto-generated method stub
 			postData();
 			return null;
 		}
@@ -154,12 +153,9 @@ public class EndScreen extends Activity implements OnClickListener {
 			HttpGet httppost = new HttpGet(
 					"http://moskitohenze.appspot.com/moskitoserver?game="+game+"&name="+playerName+"&score="+points+"&level="+level);
 			try {
-				// Execute HTTP Post Request
 				httpclient.execute(httppost);
 			} catch (ClientProtocolException e) {
-				// TODO Auto-generated catch block
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
 			}
 		}
 	}
